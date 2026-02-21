@@ -32,7 +32,7 @@ export const workSections = [
     title: "Profiles",
     items: [
       {
-        label: "AgResearch Profile",
+        label: "NZ Bioeconomy Science Institute Profile",
         secondaryLabel: "Overview of research leadership, focus areas, and institutional work.",
         dateTimeLabel: "",
         url: "https://www.agresearch.co.nz/about-us/our-people/jiafa-luo/",
