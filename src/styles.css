@@ -133,7 +133,7 @@ h2 {
 }
 
 .lead {
-  max-width: 760px;
+  max-width: 100%;
   font-size: 1.1rem;
   margin-bottom: 1rem;
 }
@@ -278,4 +278,18 @@ footer {
     justify-content: flex-start;
     flex-wrap: wrap;
   }
+}
+
+.secondary-button {
+  appearance: none;
+  -webkit-appearance: none;
+  font: inherit;
+  font-weight: 700;
+  color: #0c5f7f;
+  background: var(--surface-alt);
+  border: 1px solid #7eb8d3;
+  border-radius: 0.5rem;
+  padding: 0.65rem 1rem;
+  line-height: 1.2;
+  cursor: pointer;
 }

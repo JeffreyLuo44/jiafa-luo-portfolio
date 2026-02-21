@@ -3,29 +3,28 @@ function ContactPage() {
     <section className="panel contact-panel">
       <h1>Contact</h1>
       <p className="lead compact">
-        For research collaboration or professional enquiries, use the official
-        AgResearch profile contact pathway.
+        For research collaboration or professional enquiries.
       </p>
 
       <form className="contact-form" onSubmit={(event) => event.preventDefault()}>
         <label htmlFor="name">Name</label>
-        <input id="name" name="name" type="text" placeholder="Your name" />
+        <input id="name" name="name" type="text" placeholder="" />
 
         <label htmlFor="email">Email</label>
-        <input id="email" name="email" type="email" placeholder="you@example.com" />
+        <input id="email" name="email" type="email" placeholder="" />
 
         <label htmlFor="subject">Subject</label>
-        <input id="subject" name="subject" type="text" placeholder="Research collaboration" />
+        <input id="subject" name="subject" type="text" placeholder="" />
 
         <label htmlFor="message">Message</label>
         <textarea
           id="message"
           name="message"
           rows="5"
-          placeholder="Briefly describe your enquiry"
+          placeholder=""
         />
 
-        <button type="submit" className="cta">Prepare Message</button>
+        <button type="submit" className="cta">Send</button>
       </form>
 
       <p className="contact-note">
@@ -35,7 +34,7 @@ function ContactPage() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          AgResearch - Dr Jiafa Luo
+          NZ Bioeconomy Science Institute - Dr Jiafa Luo
         </a>
       </p>
     </section>

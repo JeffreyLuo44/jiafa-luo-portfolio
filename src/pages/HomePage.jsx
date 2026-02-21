@@ -1,44 +1,58 @@
 import { workSections } from "../data/workLinks";
 
 function HomePage() {
+  const scrollToSection = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
+
   return (
     <>
       <section className="panel hero-panel">
-        <p className="eyebrow">Principal Scientist</p>
+        <p className="eyebrow">NZ Bioeconomy Science Institute - Principal Scientist</p>
         <h1>Dr Jiafa Luo</h1>
         <p className="lead">
-          Dr Jiafa Luo is a Principal Scientist at AgResearch focused on agricultural
+          Dr Jiafa Luo is a Principal Scientist at NZ Bioeconomy Science Institute focused on agricultural
           greenhouse gas emissions, nutrient cycling, and mitigation strategies for
           resilient pasture-based farming systems.
-        </p>
-        <p>
+          <br />
+          <br />
           His work spans nitrous oxide emission reduction, nitrification inhibition,
           and practical pathways for improving environmental outcomes in livestock
           agriculture.
         </p>
         <div className="actions">
-          <a className="secondary" href="#work">
-            View Work
-          </a>
-          <a
-            className="secondary"
-            href="https://www.agresearch.co.nz/about-us/our-people/jiafa-luo/"
-            target="_blank"
-            rel="noopener noreferrer"
+          <button
+            type="button"
+            className="secondary secondary-button"
+            onClick={() => scrollToSection("work")}
           >
-            AgResearch Profile
-          </a>
-          <a className="secondary" href="#qualifications">
+            View Work
+          </button>
+          <button
+            type="button"
+            className="secondary secondary-button"
+            onClick={() => scrollToSection("qualifications")}
+          >
             Qualifications
-          </a>
+          </button>
         </div>
-        <figure className="profile-image-wrap">
-          <img
-            className="profile-image"
-            src="/images/jiafa-luo.jpg"
-            alt="Dr Jiafa Luo"
-          />
-        </figure>
+        <a
+          href="https://www.agresearch.co.nz/about-us/our-people/jiafa-luo/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Open Dr Jiafa Luo's AgResearch profile"
+        >
+          <figure className="profile-image-wrap">
+            <img
+              className="profile-image"
+              src={`${import.meta.env.BASE_URL}images/jiafa-luo.jpg`}
+              alt="Dr Jiafa Luo"
+            />
+          </figure>
+        </a>
       </section>
 
       <section id="work" className="panel content-section">
