@@ -253,8 +253,12 @@ h2 {
   border-radius: 0.45rem;
   border: 1px solid #b5d8d7;
   background: #fcffff;
+  resize: none;
 }
 
+.contact-form textarea {
+  overflow-y: auto;
+}
 .contact-note {
   margin-top: 1rem;
 }
