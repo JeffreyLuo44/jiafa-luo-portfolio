@@ -6,27 +6,6 @@ function ContactPage() {
         For research collaboration or professional enquiries.
       </p>
 
-      <form className="contact-form" onSubmit={(event) => event.preventDefault()}>
-        <label htmlFor="name">Name</label>
-        <input id="name" name="name" type="text" placeholder="" />
-
-        <label htmlFor="email">Email</label>
-        <input id="email" name="email" type="email" placeholder="" />
-
-        <label htmlFor="subject">Subject</label>
-        <input id="subject" name="subject" type="text" placeholder="" />
-
-        <label htmlFor="message">Message</label>
-        <textarea
-          id="message"
-          name="message"
-          rows="5"
-          placeholder=""
-        />
-
-        <button type="submit" className="cta">Send</button>
-      </form>
-
       <p className="contact-note">
         Official profile:{" "}
         <a
@@ -37,6 +16,24 @@ function ContactPage() {
           NZ Bioeconomy Science Institute - Dr Jiafa Luo
         </a>
       </p>
+
+      <form className="contact-form" action="https://formsubmit.co/c65f10b8fb9f81db4272945bbb0b183a" method="POST">        
+        <input type="hidden" name="_subject" value="New website contact submission" />
+
+        <label htmlFor="name">Name</label>
+        <input id="name" name="name" type="text" required />
+
+        <label htmlFor="email">Email</label>
+        <input id="email" name="email" type="email" required />
+
+        <label htmlFor="subject">Subject</label>
+        <input id="subject" name="subject" type="text" required />
+
+        <label htmlFor="message">Message</label>
+        <textarea id="message" name="message" rows="5" required />
+
+        <button type="submit" className="cta">Send</button>
+      </form>
     </section>
   );
 }
