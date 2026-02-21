@@ -32,6 +32,13 @@ function HomePage() {
             Qualifications
           </a>
         </div>
+        <figure className="profile-image-wrap">
+          <img
+            className="profile-image"
+            src="/images/jiafa-luo.jpg"
+            alt="Dr Jiafa Luo"
+          />
+        </figure>
       </section>
 
       <section id="work" className="panel content-section">
